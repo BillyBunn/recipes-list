@@ -10,7 +10,7 @@ const App = () => (
   <div>
     <Router>
       {recipes.map(recipe => (
-        <Route path={`/${recipe._id}`}>
+        <Route key={recipe._id} path={`/${recipe._id}`}>
           <Recipe recipe={recipe} />
         </Route>
       ))}
