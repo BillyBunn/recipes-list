@@ -1,0 +1,1784 @@
+[
+  {
+    "_id": "5d8fdf079265a29e73de3540",
+    "title": "nostrud anim dolore",
+    "description": "Duis magna occaecat irure officia minim duis duis exercitation. Ut aliquip ipsum consectetur cillum ad elit. Nisi consequat eiusmod officia adipisicing quis sit. Ex cillum aliquip qui proident ullamco. Nostrud sit ut eiusmod voluptate est id adipisicing sit sint consectetur cupidatat consectetur proident. Laborum eiusmod do elit aliquip nostrud elit magna. Nulla consequat commodo ut quis est et do eu incididunt dolor.\n\nMinim ad pariatur ea eu adipisicing laborum qui nulla qui aliquip Lorem sint consequat. Aute cillum nisi sit sit do culpa ipsum occaecat do exercitation sint. Adipisicing consequat quis dolor occaecat exercitation eu nostrud. Aute incididunt anim nulla commodo do velit cillum.",
+    "type": "vegetarian",
+    "steps": [
+      {
+        "title": "eiusmod id ea id ea",
+        "description": "non minim irure sunt incididunt fugiat tempor laboris mollit velit velit aliqua cillum officia excepteur in qui ex ea nostrud",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "nisi consectetur ex excepteur fugiat",
+        "description": "nisi id deserunt pariatur magna reprehenderit deserunt ex esse labore aliqua laborum in voluptate adipisicing sint nostrud excepteur Lorem voluptate",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "occaecat enim culpa ea deserunt",
+        "description": "non duis sunt tempor adipisicing et duis proident exercitation amet reprehenderit occaecat adipisicing magna irure excepteur incididunt aliquip commodo et",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "et elit excepteur id voluptate",
+        "description": "sunt nulla sunt ex consequat velit eiusmod excepteur id nostrud officia enim consequat dolore fugiat elit in reprehenderit adipisicing adipisicing",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "magna quis eu pariatur officia",
+        "description": "pariatur cupidatat sunt incididunt do Lorem nisi esse est anim nulla dolor magna culpa minim tempor nulla quis voluptate in",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf073d90e0df8dda2180",
+    "title": "voluptate ullamco ad",
+    "description": "Velit laboris amet Lorem officia ipsum reprehenderit quis ipsum excepteur dolor excepteur quis et labore. Lorem veniam laborum consequat sint labore aute amet do labore voluptate do exercitation mollit ad. Ad eu fugiat Lorem cillum consectetur laborum ut eu in ipsum ullamco est. Culpa nisi amet aliquip consequat sint. Voluptate dolor laboris occaecat commodo est.\n\nCillum velit elit laboris fugiat elit aliqua reprehenderit ipsum nostrud incididunt. Voluptate non irure consectetur enim elit sit labore aliqua aliquip ad eu cupidatat. Adipisicing officia deserunt eiusmod ullamco ullamco ut exercitation esse est. Ea adipisicing et ad tempor velit.",
+    "type": "chicken",
+    "steps": [
+      {
+        "title": "sit sint laboris excepteur qui",
+        "description": "Lorem amet deserunt dolor quis non laboris esse nostrud qui aliqua non duis sint sit elit adipisicing voluptate veniam non",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "excepteur magna in in id",
+        "description": "duis nostrud consequat qui ut eu sit aliquip pariatur pariatur qui irure non laborum occaecat occaecat ad mollit eiusmod excepteur",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "laboris voluptate esse minim non",
+        "description": "enim sint labore excepteur sunt ipsum occaecat laborum sit nisi laboris labore culpa duis ut adipisicing aliqua nulla ipsum ullamco",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "qui quis ipsum consequat ex",
+        "description": "sit in sint deserunt nulla in elit laboris occaecat incididunt pariatur occaecat adipisicing non est tempor magna laborum sunt ad",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "esse ex consequat aliqua excepteur",
+        "description": "Lorem proident laborum duis nostrud qui sint excepteur ut consequat id anim tempor velit veniam duis enim aliqua cupidatat sunt",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf07764b2d14ecfb5395",
+    "title": "in exercitation mollit",
+    "description": "Occaecat in deserunt voluptate sint amet veniam enim reprehenderit sunt est reprehenderit aute aliquip aute. Consequat id aute in nisi esse. Labore quis id incididunt officia. Cupidatat pariatur exercitation deserunt officia do amet consequat.\n\nFugiat non officia quis aliquip reprehenderit ullamco. Eiusmod esse tempor eu est veniam dolor. Tempor veniam cupidatat cillum ut ullamco dolor officia et proident sunt tempor est cillum. Et voluptate consequat velit aliqua anim non qui amet ut occaecat. Qui cillum tempor sit consequat Lorem deserunt commodo culpa dolor.",
+    "type": "chicken",
+    "steps": [
+      {
+        "title": "et fugiat exercitation aliqua ut",
+        "description": "magna qui do nisi excepteur dolore excepteur labore do mollit voluptate aliqua in id labore cillum veniam sit incididunt fugiat",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "in est ex mollit ut",
+        "description": "exercitation incididunt officia veniam incididunt do voluptate nostrud irure ut mollit deserunt elit pariatur aliqua anim eu incididunt est anim",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "duis et aliqua voluptate id",
+        "description": "anim duis commodo aute sint fugiat cillum aliqua officia aliquip laboris cupidatat irure sint deserunt anim sit nisi nisi nulla",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "exercitation magna amet elit ut",
+        "description": "veniam qui minim ad incididunt nulla elit veniam ad ad Lorem ex nisi quis non id in minim veniam esse",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "proident ullamco labore est ea",
+        "description": "eu duis qui occaecat ad non ex officia ea pariatur sint nostrud duis sit quis amet laborum do ea ullamco",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf0713d66c05624ca8d7",
+    "title": "incididunt non labore",
+    "description": "Laboris sunt anim tempor deserunt magna ut est quis cupidatat. Aliquip est anim ipsum Lorem exercitation amet cupidatat velit sint veniam officia pariatur exercitation. Amet nostrud fugiat commodo culpa voluptate occaecat elit est deserunt consequat.\n\nMinim aliqua proident aute tempor. Pariatur reprehenderit anim amet Lorem dolore Lorem excepteur ad et excepteur nostrud. Eu Lorem et mollit ipsum adipisicing consectetur non nostrud consectetur minim nulla. Id consectetur eiusmod irure non nisi aliquip nisi tempor occaecat. Sint elit adipisicing veniam velit ipsum aliqua enim minim esse cupidatat.",
+    "type": "beef",
+    "steps": [
+      {
+        "title": "elit irure dolore mollit aliqua",
+        "description": "deserunt non ut proident consectetur elit magna pariatur adipisicing non veniam aliquip enim duis anim pariatur magna reprehenderit consectetur voluptate",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "nisi nisi nisi nisi ea",
+        "description": "cupidatat est nisi labore fugiat esse voluptate anim quis dolor eu velit est nostrud esse ipsum veniam excepteur exercitation laboris",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "nulla in sint incididunt ad",
+        "description": "velit reprehenderit cupidatat nulla et enim voluptate exercitation sint culpa nulla elit tempor velit sit ut velit ex est nisi",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "commodo cupidatat qui nostrud magna",
+        "description": "pariatur aute eu adipisicing labore ex ad ex irure nostrud magna aute tempor ipsum reprehenderit est do eu aliqua ea",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "esse voluptate tempor eu proident",
+        "description": "consequat non reprehenderit in amet qui eu aliquip ad velit aute veniam sunt incididunt cillum aliqua veniam occaecat commodo ad",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf07133c2c3293e9aef4",
+    "title": "Lorem laborum elit",
+    "description": "Magna occaecat sit proident magna. Eu sint cillum et esse. Sit laboris cupidatat voluptate elit. Lorem dolor reprehenderit minim amet voluptate cillum. Aliquip laboris et ipsum et eiusmod mollit anim quis excepteur sint cillum cupidatat in.\n\nDo non sit id mollit sint ex sunt nulla mollit incididunt qui ad. Qui eu incididunt amet elit eu anim excepteur qui magna deserunt sit esse sunt eiusmod. Laborum sint ad aute aute ipsum nulla. Aliquip deserunt duis aute officia irure nisi eiusmod fugiat sit laboris laborum consectetur.",
+    "type": "beef",
+    "steps": [
+      {
+        "title": "esse ex nulla enim sint",
+        "description": "reprehenderit non pariatur labore proident ullamco do irure ut culpa ea adipisicing Lorem tempor occaecat ex aute est aute deserunt",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "dolor proident tempor eu est",
+        "description": "amet labore ut consequat dolore eu sint eiusmod officia nisi mollit in est exercitation sint cillum in qui nostrud reprehenderit",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "fugiat voluptate et mollit nisi",
+        "description": "in amet excepteur ut et ad ad nisi nostrud elit nostrud id nulla sunt sunt tempor minim enim non in",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "voluptate aliqua sit occaecat officia",
+        "description": "amet sint laborum cillum dolore culpa incididunt ex exercitation anim velit amet aliquip ut anim aliquip consequat adipisicing labore excepteur",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "ipsum deserunt aute tempor eu",
+        "description": "voluptate et sit exercitation aliquip nisi ea est deserunt consequat cillum eiusmod excepteur fugiat nisi quis proident non labore ut",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf073b6847f314e1eeb0",
+    "title": "deserunt in in",
+    "description": "Velit mollit adipisicing adipisicing quis in dolore. Lorem ut laboris proident nulla pariatur do tempor deserunt laboris aliqua labore ullamco excepteur in. Sit Lorem adipisicing ad aute do adipisicing excepteur eu. Est excepteur ipsum ut ad.\n\nLaboris officia eu cupidatat dolore adipisicing duis adipisicing ea. Quis dolor deserunt excepteur eu do laboris. Nisi ex ex fugiat magna adipisicing irure reprehenderit laborum sint aliquip exercitation occaecat sit. Adipisicing voluptate mollit sunt tempor dolore ut nulla veniam aliquip. Velit commodo ullamco fugiat et pariatur elit excepteur officia.",
+    "type": "pork",
+    "steps": [
+      {
+        "title": "incididunt enim exercitation eiusmod mollit",
+        "description": "proident nulla esse irure eu duis in tempor in amet excepteur ullamco reprehenderit esse reprehenderit ipsum adipisicing aliqua consequat enim",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "dolor duis officia non anim",
+        "description": "laboris aute Lorem adipisicing labore consequat id veniam sint enim deserunt anim officia amet proident dolore sit aute laborum cillum",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "aute ut cillum deserunt in",
+        "description": "ea velit tempor exercitation minim ipsum nulla duis excepteur nostrud voluptate proident deserunt minim ea fugiat culpa officia veniam deserunt",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "ex magna elit sunt ipsum",
+        "description": "culpa tempor nisi laborum eiusmod et commodo fugiat sunt aute reprehenderit exercitation nostrud non sint ut est et culpa laborum",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "qui minim officia ad cupidatat",
+        "description": "irure nostrud occaecat laboris velit qui elit anim eiusmod excepteur proident fugiat commodo anim nostrud id eu dolore proident mollit",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf07aced50162fc98e77",
+    "title": "sunt sunt dolor",
+    "description": "Veniam elit ea nostrud sit est quis occaecat esse reprehenderit sint qui ullamco. Sunt ipsum cupidatat nostrud sint ipsum anim voluptate ullamco eiusmod. Laborum tempor quis exercitation nisi. Eu eu ad eiusmod mollit in sit nulla nostrud sint occaecat voluptate cupidatat incididunt.\n\nAmet ea minim qui nostrud ad cillum in. Ad aliqua elit labore excepteur minim pariatur quis dolore minim ut. Non aute velit esse pariatur excepteur laborum. Magna et velit do dolore non ad amet nulla nulla cillum qui fugiat. Et mollit nostrud do pariatur enim sit. Proident ut laborum non eiusmod culpa irure commodo ex sit nisi occaecat in dolor est.",
+    "type": "beef",
+    "steps": [
+      {
+        "title": "duis nulla nisi et eiusmod",
+        "description": "sit consequat eiusmod velit minim mollit nostrud ad do non eiusmod sunt veniam excepteur voluptate dolor labore culpa officia ipsum",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "amet duis ut tempor reprehenderit",
+        "description": "fugiat adipisicing aute eiusmod aute ullamco cillum eiusmod velit reprehenderit do laborum mollit ex non officia cillum sit et voluptate",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "voluptate ad nostrud in labore",
+        "description": "pariatur laborum nostrud labore reprehenderit occaecat nostrud sint nulla dolore enim mollit laborum et sunt ipsum non laboris ad exercitation",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "irure ad culpa officia cillum",
+        "description": "velit exercitation velit cillum qui duis laborum mollit amet voluptate veniam Lorem eiusmod enim aute anim voluptate nulla pariatur aliqua",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "proident ad voluptate labore aute",
+        "description": "cillum consectetur culpa ad sint sint anim do sunt nostrud proident reprehenderit labore proident non et laborum est non cupidatat",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf07c57387864a26c978",
+    "title": "est consequat tempor",
+    "description": "Exercitation ipsum fugiat sint est occaecat enim commodo et ex. Cupidatat eu adipisicing nulla enim amet ipsum dolor ex ullamco ea anim. Mollit amet nulla incididunt occaecat adipisicing dolor adipisicing dolore do nulla veniam ipsum.\n\nCupidatat amet mollit irure non Lorem voluptate culpa aute tempor tempor velit tempor. Exercitation duis duis voluptate cillum do tempor eiusmod. Pariatur ullamco voluptate do voluptate qui incididunt nulla. Amet nisi pariatur eu mollit magna aliquip commodo. Dolor ipsum excepteur consequat laborum nostrud non mollit duis deserunt enim ipsum eiusmod velit.",
+    "type": "vegetarian",
+    "steps": [
+      {
+        "title": "nostrud officia in adipisicing officia",
+        "description": "tempor ex aliquip ipsum exercitation excepteur pariatur nostrud eiusmod incididunt reprehenderit sint culpa ut sint deserunt elit ipsum ea enim",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "nisi anim elit proident consequat",
+        "description": "voluptate est nisi non cillum laboris esse amet sint sint voluptate ad ipsum consectetur magna sit ex est esse nulla",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "cillum sit ipsum reprehenderit sint",
+        "description": "proident ut voluptate et est nisi commodo tempor sint in ut velit tempor incididunt est exercitation qui adipisicing ullamco do",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "elit voluptate laborum velit sint",
+        "description": "excepteur labore laboris elit aliqua mollit pariatur elit ex est incididunt quis sunt dolor labore pariatur dolore culpa ullamco aute",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "voluptate nostrud exercitation eiusmod sit",
+        "description": "Lorem id occaecat esse pariatur fugiat amet nulla tempor ex nulla velit exercitation magna veniam incididunt voluptate minim duis eu",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d8fdf076bc7caee66a9c6ee",
+    "title": "nisi exercitation ad",
+    "description": "Aliquip aliqua ut mollit cupidatat ex non. Est dolore laboris eu fugiat deserunt exercitation et. Excepteur cupidatat ipsum sint non nulla consequat commodo duis. Consequat Lorem adipisicing proident minim sit incididunt qui voluptate aliquip deserunt tempor quis tempor. Anim duis eu irure veniam ut id consequat ad deserunt irure irure. Laborum dolor ex labore commodo eu laborum dolor amet cupidatat ut enim.\n\nLabore dolore reprehenderit mollit nisi et quis pariatur anim enim exercitation et. Ullamco veniam in dolore esse Lorem occaecat irure esse ex. Fugiat amet consectetur aliqua est dolor laborum laboris proident minim. Ut quis ullamco et voluptate dolore amet. Consequat aliqua commodo ea nulla laboris proident velit.",
+    "type": "pork",
+    "steps": [
+      {
+        "title": "magna do ad eu minim",
+        "description": "reprehenderit nisi exercitation anim excepteur commodo ullamco eiusmod qui labore est et dolor voluptate proident aliqua excepteur nisi exercitation sit",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "eu sunt est exercitation commodo",
+        "description": "aliqua velit Lorem amet anim cupidatat velit nostrud aliqua consectetur do ipsum adipisicing ad amet mollit elit amet cupidatat nulla",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "fugiat ullamco veniam reprehenderit sunt",
+        "description": "qui laborum fugiat eu sit proident ullamco aliquip consequat fugiat occaecat dolor et aliqua ipsum enim tempor amet ex ea",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "laborum id anim in sit",
+        "description": "aute velit eiusmod sunt esse eiusmod commodo excepteur aliquip ipsum reprehenderit laboris ut nulla deserunt ullamco commodo irure in id",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      },
+      {
+        "title": "qui cupidatat reprehenderit incididunt magna",
+        "description": "ullamco non duis voluptate consequat cillum deserunt cupidatat consequat aute officia cillum aliqua sunt commodo ut nisi sit in proident",
+        "timeTemp": [
+          {
+            "doneness": "rare",
+            "time": 300000,
+            "temp": {
+              "fa": 130,
+              "ce": 54
+            }
+          },
+          {
+            "doneness": "medium-rare",
+            "time": 400000,
+            "temp": {
+              "fa": 140,
+              "ce": 60
+            }
+          },
+          {
+            "doneness": "medium",
+            "time": 500000,
+            "temp": {
+              "fa": 155,
+              "ce": 68
+            }
+          },
+          {
+            "doneness": "well-done",
+            "time": 600000,
+            "temp": {
+              "fa": 165,
+              "ce": 74
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
