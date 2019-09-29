@@ -21,7 +21,6 @@ const Recipe = ({ recipe }) => {
       <p>{description}</p>
       <div>
         <Step step={steps[currentStep]} num={currentStep + 1} />
-
         <button onClick={handlePrev}>Prev</button>
         <button onClick={handleNext}>Next</button>
       </div>
@@ -30,6 +29,7 @@ const Recipe = ({ recipe }) => {
 };
 
 const Step = ({ step, num }) => {
+  const title = `${num}. ${step.title}`;
   const range = step.timeTemp.reduce(
     (acc, val) => {
       let { time, temp } = val;
@@ -52,12 +52,16 @@ const Step = ({ step, num }) => {
 
   return (
     <>
-      <h5>
-        {num}. {step.title}
-      </h5>
+      <h5>{title}</h5>
       <p>{step.description}</p>
-      <p>{temp}</p>
-      <p>{time}</p>
+      <select>
+        <option value="">Desired doneness</option>
+        {step.timeTemp.map(({ doneness }) => (
+          <option value={doneness}>{doneness}</option>
+        ))}
+      </select>
+      <p>Temp: {temp}</p>
+      <p>Time: {time}</p>
     </>
   );
 };
