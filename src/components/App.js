@@ -4,7 +4,7 @@ import Recipe from "./Recipe";
 import RecipeList from "./RecipeList";
 import recipes from "../recipes.json";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => (
   <div>

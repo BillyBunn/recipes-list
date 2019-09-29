@@ -18,13 +18,25 @@ const Recipe = ({ recipe }) => {
       <h4>{title}</h4>
       <p>{description}</p>
       <div>
-        <h5>
-          {currentStep + 1}. {steps[currentStep].title}
-        </h5>
+        <Step step={steps[currentStep]} num={currentStep + 1} />
+
         <button onClick={handlePrev}>Prev</button>
         <button onClick={handleNext}>Next</button>
       </div>
     </div>
+  );
+};
+
+const Step = ({ step, num }) => {
+  return (
+    <>
+      <h5>
+        {num}. {step.title}
+      </h5>
+      <p>{step.description}</p>
+      <p>Temp</p>
+      <p>Time</p>
+    </>
   );
 };
 
