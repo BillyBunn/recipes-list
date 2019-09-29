@@ -13,7 +13,7 @@
             "doneness": "rare",
             "time": 300000,
             "temp": {
-              "fa": 130,
+              "fa": 125,
               "ce": 54
             }
           },
@@ -51,7 +51,7 @@
             "doneness": "rare",
             "time": 300000,
             "temp": {
-              "fa": 130,
+              "fa": 80,
               "ce": 54
             }
           },
@@ -59,7 +59,7 @@
             "doneness": "medium-rare",
             "time": 400000,
             "temp": {
-              "fa": 140,
+              "fa": 90,
               "ce": 60
             }
           },
@@ -67,7 +67,7 @@
             "doneness": "medium",
             "time": 500000,
             "temp": {
-              "fa": 155,
+              "fa": 110,
               "ce": 68
             }
           },
@@ -75,7 +75,7 @@
             "doneness": "well-done",
             "time": 600000,
             "temp": {
-              "fa": 165,
+              "fa": 120,
               "ce": 74
             }
           }
@@ -89,7 +89,7 @@
             "doneness": "rare",
             "time": 300000,
             "temp": {
-              "fa": 130,
+              "fa": 150,
               "ce": 54
             }
           },
@@ -97,7 +97,7 @@
             "doneness": "medium-rare",
             "time": 400000,
             "temp": {
-              "fa": 140,
+              "fa": 170,
               "ce": 60
             }
           },
@@ -105,7 +105,7 @@
             "doneness": "medium",
             "time": 500000,
             "temp": {
-              "fa": 155,
+              "fa": 180,
               "ce": 68
             }
           },
@@ -113,7 +113,7 @@
             "doneness": "well-done",
             "time": 600000,
             "temp": {
-              "fa": 165,
+              "fa": 200,
               "ce": 74
             }
           }
