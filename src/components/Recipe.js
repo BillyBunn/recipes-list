@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+const TEMP_UNITS = "fa";
+
 const Recipe = ({ recipe }) => {
   const { title, description, steps } = recipe;
 
@@ -28,14 +30,34 @@ const Recipe = ({ recipe }) => {
 };
 
 const Step = ({ step, num }) => {
+  const range = step.timeTemp.reduce(
+    (acc, val) => {
+      let { time, temp } = val;
+      temp = temp[TEMP_UNITS];
+      if (time < acc.time.min) acc.time.min = time;
+      if (time > acc.time.max) acc.time.max = time;
+      if (temp < acc.temp.min) acc.temp.min = temp;
+      if (temp > acc.temp.max) acc.temp.max = temp;
+      return acc;
+    },
+    {
+      time: { min: Math.min(), max: Math.max() },
+      temp: { min: Math.min(), max: Math.max() }
+    }
+  );
+  console.log(range);
+
+  const time = `${range.time.min} – ${range.time.max}`;
+  const temp = `${range.temp.min} – ${range.temp.max}`;
+
   return (
     <>
       <h5>
         {num}. {step.title}
       </h5>
       <p>{step.description}</p>
-      <p>Temp</p>
-      <p>Time</p>
+      <p>{temp}</p>
+      <p>{time}</p>
     </>
   );
 };
