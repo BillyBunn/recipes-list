@@ -23,7 +23,10 @@ const Recipe = ({ recipe }) => {
   return (
     <StyledRecipe>
       <h2>Recipe: {title}</h2>
-      <p>{description}</p>
+      <p>
+        <strong>Description: </strong>
+        {description}
+      </p>
       <div>
         <Step
           step={steps[currentStep]}
@@ -79,13 +82,20 @@ const Step = ({ step, num, tempUnits }) => {
         Step {num}:<br />
         {step.title}
       </h3>
-      <p className="recipe-description">{step.description}</p>
-      <select>
-        <option value="">Desired doneness</option>
-        {step.timeTemp.map(({ doneness }) => (
-          <option value={doneness}>{doneness}</option>
-        ))}
-      </select>
+      <p className="recipe-description">
+        <strong>Description:</strong>
+        <br />
+        {step.description}
+      </p>
+      <label>
+        Desired doneness
+        <select>
+          <option value="">Not specified</option>
+          {step.timeTemp.map(({ doneness }) => (
+            <option value={doneness}>{doneness}</option>
+          ))}
+        </select>
+      </label>
       <p>
         Temperature (&deg;{tempUnits === "fa" ? "F" : "C"}):
         <br />
