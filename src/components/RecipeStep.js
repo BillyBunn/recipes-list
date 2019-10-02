@@ -47,7 +47,9 @@ const Step = ({
         <select>
           <option value="">Not specified</option>
           {step.timeTemp.map(({ doneness }) => (
-            <option value={doneness}>{doneness}</option>
+            <option key={doneness} value={doneness}>
+              {doneness}
+            </option>
           ))}
         </select>
       </label>

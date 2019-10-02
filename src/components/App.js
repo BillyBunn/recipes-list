@@ -4,8 +4,7 @@ import Recipe from "./Recipe";
 import RecipeList from "./RecipeList";
 // import recipes from "../recipes.json";
 import { connect } from "react-redux";
-import Test from "./Test";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 const App = ({ recipes }) => (
   <div>
@@ -13,17 +12,19 @@ const App = ({ recipes }) => (
       <nav>
         <Link to="/">Recipe List</Link>
       </nav>
-      <Route path="/" exact>
-        <h3>Recipes</h3>
-        <RecipeList recipes={recipes} />
-      </Route>
-      <Route path="/recipes/:recipe_id" component={Recipe} />
+
+      <Switch>
+        <Route path="/" exact>
+          <RecipeList recipes={recipes} />
+        </Route>
+        <Route path="/recipes/:recipe_id" component={Recipe} />
+      </Switch>
     </Router>
   </div>
 );
 
 const mapStateToProps = state => ({
-  recipes: state.recipes.list
+  recipes: state.recipes.recipes
 });
 
 const mapDispatchToProps = (dispatch, getState) => ({

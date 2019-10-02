@@ -1,6 +1,6 @@
 import recipeData from "../../recipes.json";
 
-let initialState = { currentRecipe: recipeData[0], list: recipeData };
+let initialState = { currentRecipe: {}, recipes: recipeData };
 
 const recipes = (state = initialState, action) => {
   switch (action.type) {

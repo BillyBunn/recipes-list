@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Step from "./RecipeStep";
-import recipeData from "../recipes.json";
-
-const Recipe = props => {
-  const [recipe, setRecipe] = useState(null);
-  useEffect(() => {
-    let id = props.match.params.recipe_id;
-    let matchingRecipe = recipeData.filter(recipe => recipe._id === id)[0];
-    setRecipe(matchingRecipe);
-  }, []);
-
+import { connect } from "react-redux";
+const Recipe = ({ recipe }) => {
   const { title, description, steps } = recipe
     ? recipe
     : {
@@ -90,4 +82,11 @@ const StyledRecipe = styled.div`
   }
 `;
 
-export default Recipe;
+const mapStateToProps = (state, ownProps) => {
+  let id = ownProps.match.params.recipe_id;
+  return {
+    recipe: state.recipes.recipes.find(recipe => recipe._id === id)
+  };
+};
+
+export default connect(mapStateToProps)(Recipe);
