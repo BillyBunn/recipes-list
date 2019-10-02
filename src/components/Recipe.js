@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Step from "./RecipeStep";
 import { connect } from "react-redux";
 import * as actions from "../store/actions";
 
 const Recipe = props => {
+  useEffect(() => {
+    props.setCurrent();
+  }, []);
+
   const { title, description, steps } = props.recipe;
   const firstStep = props.currentStep === 0;
   const lastStep = props.currentStep >= steps.length - 1;
@@ -27,15 +31,48 @@ const Recipe = props => {
         {description}
       </p>
 
-      <Step
-        step={steps[props.currentStep]}
-        num={props.currentStep + 1}
-        tempUnits={props.tempUnits}
-        handlePrev={handlePrev}
-        handleNext={handleNext}
-        firstStep={firstStep}
-        lastStep={lastStep}
-      />
+      <div>
+        <h3>
+          Step {props.currentStep + 1}:<br />
+          {props.currentStep.title}
+        </h3>
+        <p className="recipe-description">
+          <strong>Description:</strong>
+          <br />
+          {props.currentStep.description}
+        </p>
+        <label>
+          Desired doneness
+          <select>
+            <option value="">Not specified</option>
+            {props.currentRecipe.steps[props.currentStep].timeTemp.map(
+              ({ doneness }) => (
+                <option key={doneness} value={doneness}>
+                  {doneness}
+                </option>
+              )
+            )}
+          </select>
+        </label>
+        <p>
+          Temperature (&deg;{props.tempUnits === "fa" ? "F" : "C"}):
+          <br />
+          {props.temp}
+        </p>
+        <p>
+          Time:
+          <br />
+          {props.time}
+        </p>
+        <div>
+          <button onClick={handlePrev} disabled={firstStep}>
+            Prev
+          </button>
+          <button onClick={handleNext} disabled={lastStep}>
+            Next
+          </button>
+        </div>
+      </div>
 
       <label>
         Units
@@ -47,6 +84,34 @@ const Recipe = props => {
     </StyledRecipe>
   );
 };
+
+const mapStateToProps = (state, ownProps) => {
+  let id = ownProps.match.params.recipe_id;
+  return {
+    // recipe: state.recipes.recipes.find(recipe => recipe._id === id),
+    recipe: state.recipes.currentRecipe,
+    currentStep: state.recipes.step,
+    tempUnits: state.recipes.tempUnits,
+    currentRecipe: state.recipes.currentRecipe,
+    temp: state.recipes.temp,
+    time: state.recipes.time
+  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  let id = ownProps.match.params.recipe_id;
+  return {
+    setCurrent: () => dispatch(actions.setCurrentRecipe(id)),
+    nextStep: () => dispatch(actions.nextStep()),
+    prevStep: () => dispatch(actions.prevStep()),
+    setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits))
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Recipe);
 
 const StyledRecipe = styled.div`
   display: flex;
@@ -74,25 +139,3 @@ const StyledRecipe = styled.div`
     margin: 1em auto;
   }
 `;
-
-const mapStateToProps = (state, ownProps) => {
-  let id = ownProps.match.params.recipe_id;
-  return {
-    recipe: state.recipes.recipes.find(recipe => recipe._id === id),
-    // recipe: state.recipes.currentRecipe
-    currentStep: state.recipes.step,
-    tempUnits: state.recipes.tempUnits
-  };
-};
-
-const mapDispatchToProps = (dispatch, getState) => ({
-  setCurrent: recipe => dispatch(actions.setCurrentRecipe(recipe)),
-  nextStep: () => dispatch(actions.nextStep()),
-  prevStep: () => dispatch(actions.prevStep()),
-  setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits))
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Recipe);

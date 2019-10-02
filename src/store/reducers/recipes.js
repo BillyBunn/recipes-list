@@ -2,7 +2,7 @@ import recipeData from "../../recipes.json";
 
 let initialState = {
   recipes: recipeData,
-  currentRecipe: {},
+  currentRecipe: recipeData[0],
   step: 0,
   tempUnits: "fa",
   temp: 0,
@@ -12,15 +12,23 @@ let initialState = {
 const recipes = (state = initialState, action) => {
   switch (action.type) {
     case "SELECT_RECIPE": {
-      console.log("range", calcRange(action.recipe.steps[state.step].timeTemp));
-
-      console.log("range", calcRange(action.recipe.steps[0].timeTemps));
-      return { ...state, currentRecipe: action.recipe, step: 0 };
+      let id = action.recipe;
+      let currentRecipe = state.recipes.find(recipe => recipe._id === id);
+      let { time, temp } = calcRange(currentRecipe.steps[state.step].timeTemp);
+      return { ...state, currentRecipe, time, temp, step: 0 };
     }
-    case "NEXT_STEP":
-      return { ...state, step: state.step + 1 };
-    case "PREV_STEP":
-      return { ...state, step: state.step - 1 };
+    case "NEXT_STEP": {
+      let { time, temp } = calcRange(
+        state.currentRecipe.steps[state.step].timeTemp
+      );
+      return { ...state, step: state.step + 1, time, temp };
+    }
+    case "PREV_STEP": {
+      let { time, temp } = calcRange(
+        state.currentRecipe.steps[state.step].timeTemp
+      );
+      return { ...state, step: state.step - 1, time, temp };
+    }
     case "SET_TEMP_UNITS":
       return { ...state, tempUnits: action.tempUnits };
 
@@ -30,7 +38,7 @@ const recipes = (state = initialState, action) => {
 };
 
 const calcRange = arrOfTimetemps => {
-  let result = arrOfTimetemps.reduce(
+  let { time, temp } = arrOfTimetemps.reduce(
     (acc, val) => {
       let { time, temp } = val;
       temp = temp["fa"];
@@ -45,7 +53,10 @@ const calcRange = arrOfTimetemps => {
       temp: { min: Math.min(), max: Math.max() }
     }
   );
-  return result;
+  return {
+    time: `${time.min} – ${time.max}`,
+    temp: `${temp.min} – ${temp.max}`
+  };
 };
 
 export default recipes;
