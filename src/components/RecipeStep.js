@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import { connect } from "react-redux";
 
 const Step = ({
   step,
@@ -75,4 +76,4 @@ const Step = ({
   );
 };
 
-export default Step;
+export default connect()(Step);
