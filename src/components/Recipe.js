@@ -27,21 +27,17 @@ const Recipe = ({ recipe }) => {
         <strong>Description: </strong>
         {description}
       </p>
-      <div>
-        <Step
-          step={steps[currentStep]}
-          num={currentStep + 1}
-          tempUnits={tempUnits}
-        />
-        <div>
-          <button onClick={handlePrev} disabled={firstStep}>
-            Prev
-          </button>
-          <button onClick={handleNext} disabled={lastStep}>
-            Next
-          </button>
-        </div>
-      </div>
+
+      <Step
+        step={steps[currentStep]}
+        num={currentStep + 1}
+        tempUnits={tempUnits}
+        handlePrev={handlePrev}
+        handleNext={handleNext}
+        firstStep={firstStep}
+        lastStep={lastStep}
+      />
+
       <label>
         Units
         <select value={tempUnits} onChange={handleTempSelect}>
@@ -53,7 +49,15 @@ const Recipe = ({ recipe }) => {
   );
 };
 
-const Step = ({ step, num, tempUnits }) => {
+const Step = ({
+  step,
+  num,
+  tempUnits,
+  handlePrev,
+  handleNext,
+  firstStep,
+  lastStep
+}) => {
   const range = step.timeTemp.reduce(
     (acc, val) => {
       let { time, temp } = val;
@@ -77,7 +81,7 @@ const Step = ({ step, num, tempUnits }) => {
   const temp = `${range.temp.min} – ${range.temp.max}`;
 
   return (
-    <>
+    <div>
       <h3>
         Step {num}:<br />
         {step.title}
@@ -106,7 +110,15 @@ const Step = ({ step, num, tempUnits }) => {
         <br />
         {time}
       </p>
-    </>
+      <div>
+        <button onClick={handlePrev} disabled={firstStep}>
+          Prev
+        </button>
+        <button onClick={handleNext} disabled={lastStep}>
+          Next
+        </button>
+      </div>
+    </div>
   );
 };
 
