@@ -17,7 +17,7 @@ const Recipe = ({ recipe }) => {
 
   return (
     <div>
-      <h4>{title}</h4>
+      <h4>Recipe: {title}</h4>
       <p>{description}</p>
       <div>
         <Step step={steps[currentStep]} num={currentStep + 1} />
@@ -29,7 +29,7 @@ const Recipe = ({ recipe }) => {
 };
 
 const Step = ({ step, num }) => {
-  const title = `${num}. ${step.title}`;
+  const title = `Step ${num}. ${step.title}`;
   const range = step.timeTemp.reduce(
     (acc, val) => {
       let { time, temp } = val;

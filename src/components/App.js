@@ -4,19 +4,23 @@ import Recipe from "./Recipe";
 import RecipeList from "./RecipeList";
 import recipes from "../recipes.json";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const App = () => (
   <div>
     <Router>
+      <nav>
+        <Link to="/">Recipe List</Link>
+      </nav>
+      <Route path="/" exact>
+        <h3>Recipes</h3>
+        <RecipeList recipes={recipes} />
+      </Route>
       {recipes.map(recipe => (
         <Route key={recipe._id} path={`/${recipe._id}`}>
           <Recipe recipe={recipe} />
         </Route>
       ))}
-      <h3>Recipes</h3>
-
-      <RecipeList recipes={recipes} />
     </Router>
   </div>
 );
