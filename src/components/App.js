@@ -2,11 +2,12 @@ import React from "react";
 // import RecipeFilter from "./RecipeFilter";
 import Recipe from "./Recipe";
 import RecipeList from "./RecipeList";
-import recipes from "../recipes.json";
-
+// import recipes from "../recipes.json";
+import { connect } from "react-redux";
+import Test from "./Test";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-const App = () => (
+const App = ({ recipes }) => (
   <div>
     <Router>
       <nav>
@@ -16,13 +17,21 @@ const App = () => (
         <h3>Recipes</h3>
         <RecipeList recipes={recipes} />
       </Route>
-      {recipes.map(recipe => (
-        <Route key={recipe._id} path={`/${recipe._id}`}>
-          <Recipe recipe={recipe} />
-        </Route>
-      ))}
+      <Route path="/recipes/:recipe_id" component={Recipe} />
     </Router>
   </div>
 );
 
-export default App;
+const mapStateToProps = state => ({
+  recipes: state.recipes.list
+});
+
+const mapDispatchToProps = (dispatch, getState) => ({
+  handleClick: () => dispatch(actions.go()),
+  handleReset: () => dispatch(actions.reset())
+});
+
+export default connect(
+  mapStateToProps
+  // mapDispatchToProps
+)(App);

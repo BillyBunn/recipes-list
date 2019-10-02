@@ -1,4 +1,8 @@
-const todos = (state = [], action) => {
+import recipeData from "../../recipes.json";
+
+let initialState = { currentRecipe: recipeData[0], list: recipeData };
+
+const recipes = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_RECIPE":
       return [
@@ -18,4 +22,4 @@ const todos = (state = [], action) => {
   }
 };
 
-export default todos;
+export default recipes;
