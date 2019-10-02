@@ -1,29 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Step from "./RecipeStep";
 import { connect } from "react-redux";
-const Recipe = ({ recipe }) => {
-  const { title, description, steps } = recipe
-    ? recipe
-    : {
-        title: "loading",
-        description: "loading",
-        steps: [{ title: "loading", description: "loading", timeTemp: [] }]
-      };
+import * as actions from "../store/actions";
 
-  const [currentStep, setCurrentStep] = useState(0);
-  const firstStep = currentStep === 0;
-  const lastStep = currentStep >= steps.length - 1;
+const Recipe = props => {
+  const { title, description, steps } = props.recipe;
+  const firstStep = props.currentStep === 0;
+  const lastStep = props.currentStep >= steps.length - 1;
   const handleNext = () => {
-    if (!lastStep) setCurrentStep(currentStep + 1);
+    if (!lastStep) props.nextStep();
   };
   const handlePrev = () => {
-    if (!firstStep) setCurrentStep(currentStep - 1);
+    if (!firstStep) props.prevStep();
   };
 
-  const [tempUnits, setTempUnits] = useState("fa");
   const handleTempSelect = e => {
-    setTempUnits(e.target.value);
+    props.setTempUnits(e.target.value);
   };
 
   return (
@@ -35,9 +28,9 @@ const Recipe = ({ recipe }) => {
       </p>
 
       <Step
-        step={steps[currentStep]}
-        num={currentStep + 1}
-        tempUnits={tempUnits}
+        step={steps[props.currentStep]}
+        num={props.currentStep + 1}
+        tempUnits={props.tempUnits}
         handlePrev={handlePrev}
         handleNext={handleNext}
         firstStep={firstStep}
@@ -46,7 +39,7 @@ const Recipe = ({ recipe }) => {
 
       <label>
         Units
-        <select value={tempUnits} onChange={handleTempSelect}>
+        <select value={props.tempUnits} onChange={handleTempSelect}>
           <option value="fa">Fahrenheit</option>
           <option value="ce">Celcius</option>
         </select>
@@ -85,8 +78,21 @@ const StyledRecipe = styled.div`
 const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.recipe_id;
   return {
-    recipe: state.recipes.recipes.find(recipe => recipe._id === id)
+    recipe: state.recipes.recipes.find(recipe => recipe._id === id),
+    // recipe: state.recipes.currentRecipe
+    currentStep: state.recipes.step,
+    tempUnits: state.recipes.tempUnits
   };
 };
 
-export default connect(mapStateToProps)(Recipe);
+const mapDispatchToProps = (dispatch, getState) => ({
+  setCurrent: recipe => dispatch(actions.setCurrentRecipe(recipe)),
+  nextStep: () => dispatch(actions.nextStep()),
+  prevStep: () => dispatch(actions.prevStep()),
+  setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Recipe);

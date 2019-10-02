@@ -20,3 +20,20 @@ export const VisibilityFilters = {
   SHOW_COMPLETED: "SHOW_COMPLETED",
   SHOW_ACTIVE: "SHOW_ACTIVE"
 };
+
+export const setCurrentRecipe = recipe => ({
+  type: "SELECT_RECIPE",
+  recipe
+});
+
+export const nextStep = () => ({
+  type: "NEXT_STEP"
+});
+export const prevStep = () => ({
+  type: "PREV_STEP"
+});
+
+export const setTempUnits = tempUnits => ({
+  type: "SET_TEMP_UNITS",
+  tempUnits
+});

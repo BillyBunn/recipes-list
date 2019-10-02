@@ -1,22 +1,26 @@
 import recipeData from "../../recipes.json";
 
-let initialState = { currentRecipe: {}, recipes: recipeData };
+let initialState = {
+  recipes: recipeData,
+  currentRecipe: {},
+  step: 0,
+  tempUnits: "fa"
+};
 
 const recipes = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_RECIPE":
-      return [
-        ...state,
-        {
-          id: action.id,
-          text: action.text,
-          completed: false
-        }
-      ];
     case "SELECT_RECIPE":
-      return state.map(todo =>
-        todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
-      );
+      console.log("SELECT_RECIPE");
+      return { ...state, currentRecipe: action.recipe, step: 0 };
+
+    case "NEXT_STEP":
+      return { ...state, step: state.step + 1 };
+    case "PREV_STEP":
+      return { ...state, step: state.step - 1 };
+
+    case "SET_TEMP_UNITS":
+      return { ...state, tempUnits: action.tempUnits };
+
     default:
       return state;
   }
