@@ -11,21 +11,10 @@ const Recipe = props => {
     props.findCurrentRecipe();
     setLoading(false);
   }, []);
-  // console.log("props.recipe", props.recipe.title);
 
-  // const { title, description, steps } = props.recipe;
-  // const firstStep = props.currentStep === 0;
-  // const lastStep = props.currentStep >= steps.length - 1;
-  // const handleNext = () => {
-  //   if (!lastStep) props.nextStep();
-  // };
-  // const handlePrev = () => {
-  //   if (!firstStep) props.prevStep();
-  // };
-
-  // const handleTempSelect = e => {
-  //   props.setTempUnits(e.target.value);
-  // };
+  const handleTempSelect = e => {
+    props.setTempUnits(e.target.value);
+  };
 
   return (
     <StyledRecipe>
@@ -36,14 +25,14 @@ const Recipe = props => {
             <strong>Description: </strong>
             {props.recipe.description}
           </p>
-          {/* <Step step={props.currentStep} />
+          <Step step={props.step} />
           <label>
             Units
             <select value={props.tempUnits} onChange={handleTempSelect}>
               <option value="fa">Fahrenheit</option>
               <option value="ce">Celcius</option>
             </select>
-          </label> */}
+          </label>
         </>
       )}
     </StyledRecipe>
@@ -54,7 +43,7 @@ const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.recipe_id;
   return {
     recipe: state.currentRecipe.currentRecipe,
-    currentStep: state.currentRecipe.step,
+    step: state.currentRecipe.step,
     tempUnits: state.currentRecipe.tempUnits,
     temp: state.currentRecipe.temp,
     time: state.currentRecipe.time

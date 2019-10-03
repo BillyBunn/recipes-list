@@ -3,9 +3,10 @@ import { connect } from "react-redux";
 import * as actions from "../store/actions";
 
 const Step = props => {
-  const { currentStep, step, temp, time, tempUnits, doneness } = props;
+  const { currentStep, step, currentRecipe, tempUnits } = props;
+  const { title, description, doneness, time, temp } = currentStep;
   const firstStep = step === 0;
-  const lastStep = step >= 50;
+  const lastStep = step >= currentRecipe.steps.length - 1;
   const handleNext = () => {
     if (!lastStep) props.nextStep();
   };
@@ -15,16 +16,17 @@ const Step = props => {
   const handleDonenessChange = e => {
     props.changeDoneness(e.target.value);
   };
+
   return (
     <div>
       <h3>
         Step {step + 1}:<br />
-        {currentStep.title}
+        {title}
       </h3>
       <p className="recipe-description">
         <strong>Description:</strong>
         <br />
-        {currentStep.description}
+        {description}
       </p>
       <label>
         Desired doneness
@@ -62,20 +64,16 @@ const Step = props => {
 const mapStateToProps = (state, ownProps) => {
   let idx = ownProps.step;
   return {
-    currentStep: state.recipes.currentRecipe.steps[idx],
-    tempUnits: state.recipes.tempUnits,
-    temp: state.recipes.temp,
-    time: state.recipes.time,
-    doneness: state.recipes.doneness
+    currentStep: state.currentRecipe.currentRecipe.steps[idx],
+    currentRecipe: state.currentRecipe.currentRecipe,
+    tempUnits: state.currentRecipe.tempUnits
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    setCurrent: () => dispatch(actions.setCurrentRecipe(id)),
     nextStep: () => dispatch(actions.nextStep()),
     prevStep: () => dispatch(actions.prevStep()),
-    setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits)),
     changeDoneness: doneness => dispatch(actions.changeDoneness(doneness))
   };
 };
