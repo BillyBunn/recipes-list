@@ -2,26 +2,26 @@ import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../store/actions";
 
-const Step = props => {
-  const { currentStep, step, currentRecipe, tempUnits } = props;
-  const { title, description, doneness, time, temp } = currentStep;
-  const firstStep = step === 0;
-  const lastStep = step >= currentRecipe.steps.length - 1;
+const Step = ({ currentRecipe, nextStep, prevStep, changeDoneness }) => {
+  const { recipe, stepNo, tempUnits, temp, time, doneness } = currentRecipe;
+  const { title, description, timeTemp } = recipe.steps[stepNo];
+
+  const firstStep = stepNo === 0;
+  const lastStep = stepNo >= recipe.steps.length - 1;
   const handleNext = () => {
-    if (!lastStep) props.nextStep();
+    if (!lastStep) nextStep();
   };
   const handlePrev = () => {
-    if (!firstStep) props.prevStep();
+    if (!firstStep) prevStep();
   };
   const handleDonenessChange = e => {
-    props.changeDoneness(e.target.value);
+    changeDoneness(e.target.value);
   };
-  console.log("temp", temp);
 
   return (
     <div>
       <h3>
-        Step {step + 1}:<br />
+        Step {stepNo + 1}:<br />
         {title}
       </h3>
       <p className="recipe-description">
@@ -33,7 +33,7 @@ const Step = props => {
         Desired doneness
         <select value={doneness} onChange={handleDonenessChange}>
           <option value="">Not specified</option>
-          {currentStep.timeTemp.map(({ doneness }) => (
+          {timeTemp.map(({ doneness }) => (
             <option key={doneness} value={doneness}>
               {doneness}
             </option>
@@ -63,11 +63,8 @@ const Step = props => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-  let idx = ownProps.step;
   return {
-    currentStep: state.currentRecipe.currentRecipe.steps[idx],
-    currentRecipe: state.currentRecipe.currentRecipe,
-    tempUnits: state.currentRecipe.tempUnits
+    currentRecipe: state.currentRecipe
   };
 };
 

@@ -24,7 +24,7 @@ const Recipe = props => {
             <strong>Description: </strong>
             {props.recipe.description}
           </p>
-          <Step step={props.step} />
+          <Step />
           <label>
             Units
             <select value={props.tempUnits} onChange={handleTempSelect}>
@@ -41,8 +41,8 @@ const Recipe = props => {
 const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.recipe_id;
   return {
-    recipe: state.currentRecipe.currentRecipe,
-    step: state.currentRecipe.step,
+    recipe: state.currentRecipe.recipe,
+    step: state.currentRecipe.stepNo,
     tempUnits: state.currentRecipe.tempUnits,
     temp: state.currentRecipe.temp,
     time: state.currentRecipe.time

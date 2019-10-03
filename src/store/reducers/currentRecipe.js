@@ -1,9 +1,6 @@
-import moment from "moment";
-// import recipeData from "../../recipes.json";
-
 let initialState = {
-  currentRecipe: null,
-  step: 0,
+  recipe: null,
+  stepNo: 0,
   tempUnits: "fa",
   temp: 0,
   time: 0,
@@ -13,23 +10,23 @@ let initialState = {
 const recipes = (state = initialState, action) => {
   switch (action.type) {
     case "SET_CURRENT_RECIPE": {
-      let currentRecipe = action.payload;
-      let { time, temp } = createRange(
-        currentRecipe.steps[state.step].timeTemp
-      );
-      return { ...state, currentRecipe, time, temp, step: 0, doneness: null };
+      let recipe = action.payload;
+      let { time, temp } = createRange(recipe.steps[state.stepNo].timeTemp);
+      console.log("time", time, "temp", temp);
+      return { ...state, recipe, time, temp, stepNo: 0, doneness: null };
     }
     case "NEXT_STEP": {
+      console.log("NEXT_STEP");
       let { time, temp } = createRange(
-        state.currentRecipe.steps[state.step].timeTemp
+        state.recipe.steps[state.stepNo].timeTemp
       );
-      return { ...state, step: state.step + 1, time, temp, doneness: "" };
+      return { ...state, stepNo: state.stepNo + 1, time, temp, doneness: "" };
     }
     case "PREV_STEP": {
       let { time, temp } = createRange(
-        state.currentRecipe.steps[state.step].timeTemp
+        state.recipe.steps[state.stepNo].timeTemp
       );
-      return { ...state, step: state.step - 1, time, temp, doneness: "" };
+      return { ...state, stepNo: state.stepNo - 1, time, temp, doneness: "" };
     }
     case "SET_TEMP_UNITS": {
       return { ...state, tempUnits: action.tempUnits };
@@ -38,7 +35,7 @@ const recipes = (state = initialState, action) => {
     case "SET_DONENESS": {
       let doneness = action.doneness;
       if (doneness) {
-        let selection = state.currentRecipe.steps[state.step].timeTemp.find(
+        let selection = state.recipe.steps[state.stepNo].timeTemp.find(
           option => option.doneness === doneness
         );
         let time = convertMS(selection.time).display;
@@ -47,7 +44,7 @@ const recipes = (state = initialState, action) => {
         return { ...state, doneness, time, temp };
       } else {
         let { time, temp } = createRange(
-          state.currentRecipe.steps[state.step].timeTemp
+          state.recipe.steps[state.stepNo].timeTemp
         );
         return { ...state, doneness: "", time, temp };
       }
