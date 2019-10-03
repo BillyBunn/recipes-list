@@ -37,3 +37,8 @@ export const setTempUnits = tempUnits => ({
   type: "SET_TEMP_UNITS",
   tempUnits
 });
+
+export const changeDoneness = doneness => ({
+  type: "SET_DONENESS",
+  doneness
+});

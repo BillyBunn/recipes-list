@@ -7,7 +7,8 @@ let initialState = {
   step: 0,
   tempUnits: "fa",
   temp: 0,
-  time: 0
+  time: 0,
+  doneness: ""
 };
 
 const recipes = (state = initialState, action) => {
@@ -30,8 +31,19 @@ const recipes = (state = initialState, action) => {
       );
       return { ...state, step: state.step - 1, time, temp };
     }
-    case "SET_TEMP_UNITS":
+    case "SET_TEMP_UNITS": {
       return { ...state, tempUnits: action.tempUnits };
+    }
+
+    case "SET_DONENESS": {
+      let doneness = action.doneness;
+      let selection = state.currentRecipe.steps[state.step].timeTemp.find(
+        option => option.doneness === doneness
+      );
+      console.log("temp", selection);
+      let time = selection.time;
+      return { ...state, doneness, time };
+    }
 
     default:
       return state;
@@ -80,6 +92,12 @@ function convertMS(milliseconds) {
   hours = Math.floor(minutes / 60);
   minutes = minutes % 60;
   hours = hours % 24;
+
+  let str = {
+    hours: hours.toString(),
+    minutes: minutes.toString(),
+    seconds: seconds.toString()
+  };
   return {
     hours,
     minutes,

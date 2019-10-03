@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import * as actions from "../store/actions";
 
 const Step = props => {
-  const { currentStep, step, temp, time, tempUnits } = props;
+  const { currentStep, step, temp, time, tempUnits, doneness } = props;
   const firstStep = step === 0;
   const lastStep = step >= 50;
   const handleNext = () => {
@@ -11,6 +11,9 @@ const Step = props => {
   };
   const handlePrev = () => {
     if (!firstStep) props.prevStep();
+  };
+  const handleDonenessChange = e => {
+    props.changeDoneness(e.target.value);
   };
   return (
     <div>
@@ -25,7 +28,7 @@ const Step = props => {
       </p>
       <label>
         Desired doneness
-        <select>
+        <select value={doneness} onChange={handleDonenessChange}>
           <option value="">Not specified</option>
           {currentStep.timeTemp.map(({ doneness }) => (
             <option key={doneness} value={doneness}>
@@ -62,7 +65,8 @@ const mapStateToProps = (state, ownProps) => {
     currentStep: state.recipes.currentRecipe.steps[idx],
     tempUnits: state.recipes.tempUnits,
     temp: state.recipes.temp,
-    time: state.recipes.time
+    time: state.recipes.time,
+    doneness: state.recipes.doneness
   };
 };
 
@@ -71,7 +75,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     setCurrent: () => dispatch(actions.setCurrentRecipe(id)),
     nextStep: () => dispatch(actions.nextStep()),
     prevStep: () => dispatch(actions.prevStep()),
-    setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits))
+    setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits)),
+    changeDoneness: doneness => dispatch(actions.changeDoneness(doneness))
   };
 };
 
