@@ -30,50 +30,7 @@ const Recipe = props => {
         <strong>Description: </strong>
         {description}
       </p>
-
-      <div>
-        <h3>
-          Step {props.currentStep + 1}:<br />
-          {props.currentStep.title}
-        </h3>
-        <p className="recipe-description">
-          <strong>Description:</strong>
-          <br />
-          {props.currentStep.description}
-        </p>
-        <label>
-          Desired doneness
-          <select>
-            <option value="">Not specified</option>
-            {props.currentRecipe.steps[props.currentStep].timeTemp.map(
-              ({ doneness }) => (
-                <option key={doneness} value={doneness}>
-                  {doneness}
-                </option>
-              )
-            )}
-          </select>
-        </label>
-        <p>
-          Temperature (&deg;{props.tempUnits === "fa" ? "F" : "C"}):
-          <br />
-          {props.temp}
-        </p>
-        <p>
-          Time:
-          <br />
-          {props.time}
-        </p>
-        <div>
-          <button onClick={handlePrev} disabled={firstStep}>
-            Prev
-          </button>
-          <button onClick={handleNext} disabled={lastStep}>
-            Next
-          </button>
-        </div>
-      </div>
-
+      <Step step={props.currentStep} />
       <label>
         Units
         <select value={props.tempUnits} onChange={handleTempSelect}>
@@ -88,7 +45,6 @@ const Recipe = props => {
 const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.recipe_id;
   return {
-    // recipe: state.recipes.recipes.find(recipe => recipe._id === id),
     recipe: state.recipes.currentRecipe,
     currentStep: state.recipes.step,
     tempUnits: state.recipes.tempUnits,

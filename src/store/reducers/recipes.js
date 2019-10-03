@@ -1,3 +1,4 @@
+import moment from "moment";
 import recipeData from "../../recipes.json";
 
 let initialState = {
@@ -53,10 +54,37 @@ const calcRange = arrOfTimetemps => {
       temp: { min: Math.min(), max: Math.max() }
     }
   );
+  let minTimes = convertMS(time.min);
+  for (let prop in minTimes) {
+    minTimes[prop] = minTimes[prop].toString();
+    if (minTimes[prop].length < 2) minTimes[prop] = "0" + minTimes[prop];
+  }
+  let min = `${minTimes.hours}:${minTimes.minutes}:${minTimes.seconds}`;
+  let maxTimes = convertMS(time.max);
+  for (let prop in maxTimes) {
+    maxTimes[prop] = maxTimes[prop].toString();
+    if (maxTimes[prop].length < 2) maxTimes[prop] = "0" + maxTimes[prop];
+  }
+  let max = `${maxTimes.hours}:${maxTimes.minutes}:${maxTimes.seconds}`;
   return {
-    time: `${time.min} – ${time.max}`,
+    time: `${min} – ${max}`,
     temp: `${temp.min} – ${temp.max}`
   };
 };
+
+function convertMS(milliseconds) {
+  let hours, minutes, seconds;
+  seconds = Math.floor(milliseconds / 1000);
+  minutes = Math.floor(seconds / 60);
+  seconds = seconds % 60;
+  hours = Math.floor(minutes / 60);
+  minutes = minutes % 60;
+  hours = hours % 24;
+  return {
+    hours,
+    minutes,
+    seconds
+  };
+}
 
 export default recipes;

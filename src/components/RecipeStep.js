@@ -1,53 +1,33 @@
 import React from "react";
-import moment from "moment";
 import { connect } from "react-redux";
+import * as actions from "../store/actions";
 
-const Step = ({
-  step,
-  num,
-  tempUnits,
-  handlePrev,
-  handleNext,
-  firstStep,
-  lastStep
-}) => {
-  const range = step.timeTemp.reduce(
-    (acc, val) => {
-      let { time, temp } = val;
-      temp = temp[tempUnits];
-      if (time < acc.time.min) acc.time.min = time;
-      if (time > acc.time.max) acc.time.max = time;
-      if (temp < acc.temp.min) acc.temp.min = temp;
-      if (temp > acc.temp.max) acc.temp.max = temp;
-      return acc;
-    },
-    {
-      time: { min: Math.min(), max: Math.max() },
-      temp: { min: Math.min(), max: Math.max() }
-    }
-  );
-
-  const time = `${moment.utc(range.time.min).format("mm:ss")} – ${moment
-    .utc(range.time.max)
-    .format("mm:ss")} minutes`;
-  const temp = `${range.temp.min} – ${range.temp.max}`;
-
+const Step = props => {
+  const { currentStep, step, temp, time, tempUnits } = props;
+  const firstStep = step === 0;
+  const lastStep = step >= 50;
+  const handleNext = () => {
+    if (!lastStep) props.nextStep();
+  };
+  const handlePrev = () => {
+    if (!firstStep) props.prevStep();
+  };
   return (
     <div>
       <h3>
-        Step {num}:<br />
-        {step.title}
+        Step {step + 1}:<br />
+        {currentStep.title}
       </h3>
       <p className="recipe-description">
         <strong>Description:</strong>
         <br />
-        {step.description}
+        {currentStep.description}
       </p>
       <label>
         Desired doneness
         <select>
           <option value="">Not specified</option>
-          {step.timeTemp.map(({ doneness }) => (
+          {currentStep.timeTemp.map(({ doneness }) => (
             <option key={doneness} value={doneness}>
               {doneness}
             </option>
@@ -76,4 +56,26 @@ const Step = ({
   );
 };
 
-export default connect()(Step);
+const mapStateToProps = (state, ownProps) => {
+  let idx = ownProps.step;
+  return {
+    currentStep: state.recipes.currentRecipe.steps[idx],
+    tempUnits: state.recipes.tempUnits,
+    temp: state.recipes.temp,
+    time: state.recipes.time
+  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    setCurrent: () => dispatch(actions.setCurrentRecipe(id)),
+    nextStep: () => dispatch(actions.nextStep()),
+    prevStep: () => dispatch(actions.prevStep()),
+    setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits))
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Step);

@@ -49,7 +49,7 @@
         "timeTemp": [
           {
             "doneness": "rare",
-            "time": 300000,
+            "time": 150000,
             "temp": {
               "fa": 80,
               "ce": 54
