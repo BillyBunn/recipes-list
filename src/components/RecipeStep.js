@@ -16,6 +16,7 @@ const Step = props => {
   const handleDonenessChange = e => {
     props.changeDoneness(e.target.value);
   };
+  console.log("temp", temp);
 
   return (
     <div>

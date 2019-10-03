@@ -7,7 +7,6 @@ import * as actions from "../store/actions";
 const Recipe = props => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    console.log("useEffect");
     props.findCurrentRecipe();
     setLoading(false);
   }, []);
