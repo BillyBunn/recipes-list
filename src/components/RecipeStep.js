@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../store/actions";
+import Timer from "./Timer";
 
 const Step = ({ currentRecipe, nextStep, prevStep, changeDoneness }) => {
   const { recipe, stepNo, tempUnits, temp, time, doneness } = currentRecipe;
@@ -45,11 +46,11 @@ const Step = ({ currentRecipe, nextStep, prevStep, changeDoneness }) => {
         <br />
         {temp}
       </p>
-      <p>
+      <div>
         Time (hh:mm:ss):
         <br />
-        {time}
-      </p>
+        {doneness ? <Timer totalTime={time} /> : time.display}
+      </div>
       <div>
         <button onClick={handlePrev} disabled={firstStep}>
           Prev

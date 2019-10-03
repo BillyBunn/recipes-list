@@ -38,7 +38,7 @@ const recipes = (state = initialState, action) => {
         let selection = state.recipe.steps[state.stepNo].timeTemp.find(
           option => option.doneness === doneness
         );
-        let time = convertMS(selection.time).display;
+        let time = convertMS(selection.time);
         // console.log("selection", selection);
         let temp = selection.temp[state.tempUnits];
         return { ...state, doneness, time, temp };
