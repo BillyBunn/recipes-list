@@ -66,20 +66,9 @@ const calcRange = arrOfTimetemps => {
       temp: { min: Math.min(), max: Math.max() }
     }
   );
-  let minTimes = convertMS(time.min);
-  for (let prop in minTimes) {
-    minTimes[prop] = minTimes[prop].toString();
-    if (minTimes[prop].length < 2) minTimes[prop] = "0" + minTimes[prop];
-  }
-  let min = `${minTimes.hours}:${minTimes.minutes}:${minTimes.seconds}`;
-  let maxTimes = convertMS(time.max);
-  for (let prop in maxTimes) {
-    maxTimes[prop] = maxTimes[prop].toString();
-    if (maxTimes[prop].length < 2) maxTimes[prop] = "0" + maxTimes[prop];
-  }
-  let max = `${maxTimes.hours}:${maxTimes.minutes}:${maxTimes.seconds}`;
+
   return {
-    time: `${min} – ${max}`,
+    time: `${convertMS(time.min).display} – ${convertMS(time.max).display}`,
     temp: `${temp.min} – ${temp.max}`
   };
 };
@@ -93,15 +82,23 @@ function convertMS(milliseconds) {
   minutes = minutes % 60;
   hours = hours % 24;
 
-  let str = {
-    hours: hours.toString(),
-    minutes: minutes.toString(),
-    seconds: seconds.toString()
+  const makeDisplay = num => {
+    return num > 0
+      ? !num.toString().length < 2
+        ? num.toString()
+        : "0" + num.toString()
+      : "00";
   };
+
+  let display = `${makeDisplay(hours)}:${makeDisplay(minutes)}:${makeDisplay(
+    seconds
+  )}`;
+
   return {
     hours,
     minutes,
-    seconds
+    seconds,
+    display
   };
 }
 
