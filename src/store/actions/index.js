@@ -1,3 +1,17 @@
+export const findCurrentRecipe = recipeId => {
+  console.log("findCurrentRecipe");
+  return (dispatch, getState) => {
+    let selectedRecipe = getState().recipes.find(
+      recipe => recipe._id === recipeId
+    );
+    dispatch(setCurrentRecipe(selectedRecipe));
+  };
+};
+export const setCurrentRecipe = recipe => ({
+  type: "SET_CURRENT_RECIPE",
+  payload: recipe
+});
+
 let nextTodoId = 0;
 export const addTodo = text => ({
   type: "ADD_TODO",
@@ -21,10 +35,10 @@ export const VisibilityFilters = {
   SHOW_ACTIVE: "SHOW_ACTIVE"
 };
 
-export const setCurrentRecipe = recipe => ({
-  type: "SELECT_RECIPE",
-  recipe
-});
+// export const setCurrentRecipe = (recipe) => ({
+//   type: "SELECT_RECIPE",
+//   recipe
+// });
 
 export const nextStep = () => ({
   type: "NEXT_STEP"

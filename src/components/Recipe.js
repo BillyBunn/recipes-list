@@ -1,43 +1,51 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Step from "./RecipeStep";
 import { connect } from "react-redux";
 import * as actions from "../store/actions";
 
 const Recipe = props => {
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    props.setCurrent();
+    console.log("useEffect");
+    props.findCurrentRecipe();
+    setLoading(false);
   }, []);
+  // console.log("props.recipe", props.recipe.title);
 
-  const { title, description, steps } = props.recipe;
-  const firstStep = props.currentStep === 0;
-  const lastStep = props.currentStep >= steps.length - 1;
-  const handleNext = () => {
-    if (!lastStep) props.nextStep();
-  };
-  const handlePrev = () => {
-    if (!firstStep) props.prevStep();
-  };
+  // const { title, description, steps } = props.recipe;
+  // const firstStep = props.currentStep === 0;
+  // const lastStep = props.currentStep >= steps.length - 1;
+  // const handleNext = () => {
+  //   if (!lastStep) props.nextStep();
+  // };
+  // const handlePrev = () => {
+  //   if (!firstStep) props.prevStep();
+  // };
 
-  const handleTempSelect = e => {
-    props.setTempUnits(e.target.value);
-  };
+  // const handleTempSelect = e => {
+  //   props.setTempUnits(e.target.value);
+  // };
 
   return (
     <StyledRecipe>
-      <h2>Recipe: {title}</h2>
-      <p>
-        <strong>Description: </strong>
-        {description}
-      </p>
-      <Step step={props.currentStep} />
-      <label>
-        Units
-        <select value={props.tempUnits} onChange={handleTempSelect}>
-          <option value="fa">Fahrenheit</option>
-          <option value="ce">Celcius</option>
-        </select>
-      </label>
+      {!loading && (
+        <>
+          <h2>Recipe: {props.recipe.title}</h2>
+          <p>
+            <strong>Description: </strong>
+            {props.recipe.description}
+          </p>
+          {/* <Step step={props.currentStep} />
+          <label>
+            Units
+            <select value={props.tempUnits} onChange={handleTempSelect}>
+              <option value="fa">Fahrenheit</option>
+              <option value="ce">Celcius</option>
+            </select>
+          </label> */}
+        </>
+      )}
     </StyledRecipe>
   );
 };
@@ -45,19 +53,18 @@ const Recipe = props => {
 const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.recipe_id;
   return {
-    recipe: state.recipes.currentRecipe,
-    currentStep: state.recipes.step,
-    tempUnits: state.recipes.tempUnits,
-    currentRecipe: state.recipes.currentRecipe,
-    temp: state.recipes.temp,
-    time: state.recipes.time
+    recipe: state.currentRecipe.currentRecipe,
+    currentStep: state.currentRecipe.step,
+    tempUnits: state.currentRecipe.tempUnits,
+    temp: state.currentRecipe.temp,
+    time: state.currentRecipe.time
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   let id = ownProps.match.params.recipe_id;
   return {
-    setCurrent: () => dispatch(actions.setCurrentRecipe(id)),
+    findCurrentRecipe: () => dispatch(actions.findCurrentRecipe(id)),
     nextStep: () => dispatch(actions.nextStep()),
     prevStep: () => dispatch(actions.prevStep()),
     setTempUnits: tempUnits => dispatch(actions.setTempUnits(tempUnits))
@@ -71,8 +78,6 @@ export default connect(
 
 const StyledRecipe = styled.div`
   display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   flex-flow: column nowrap;
   margin: 0 auto;
   max-width: 30em;

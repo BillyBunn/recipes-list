@@ -43,7 +43,7 @@ const Step = props => {
         {temp}
       </p>
       <p>
-        Time:
+        Time (hh:mm:ss):
         <br />
         {time}
       </p>
