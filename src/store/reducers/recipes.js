@@ -16,20 +16,22 @@ const recipes = (state = initialState, action) => {
     case "SELECT_RECIPE": {
       let id = action.recipe;
       let currentRecipe = state.recipes.find(recipe => recipe._id === id);
-      let { time, temp } = calcRange(currentRecipe.steps[state.step].timeTemp);
-      return { ...state, currentRecipe, time, temp, step: 0 };
+      let { time, temp } = createRange(
+        currentRecipe.steps[state.step].timeTemp
+      );
+      return { ...state, currentRecipe, time, temp, step: 0, doneness: "" };
     }
     case "NEXT_STEP": {
-      let { time, temp } = calcRange(
+      let { time, temp } = createRange(
         state.currentRecipe.steps[state.step].timeTemp
       );
-      return { ...state, step: state.step + 1, time, temp };
+      return { ...state, step: state.step + 1, time, temp, doneness: "" };
     }
     case "PREV_STEP": {
-      let { time, temp } = calcRange(
+      let { time, temp } = createRange(
         state.currentRecipe.steps[state.step].timeTemp
       );
-      return { ...state, step: state.step - 1, time, temp };
+      return { ...state, step: state.step - 1, time, temp, doneness: "" };
     }
     case "SET_TEMP_UNITS": {
       return { ...state, tempUnits: action.tempUnits };
@@ -37,12 +39,18 @@ const recipes = (state = initialState, action) => {
 
     case "SET_DONENESS": {
       let doneness = action.doneness;
-      let selection = state.currentRecipe.steps[state.step].timeTemp.find(
-        option => option.doneness === doneness
-      );
-      console.log("temp", selection);
-      let time = selection.time;
-      return { ...state, doneness, time };
+      if (doneness) {
+        let selection = state.currentRecipe.steps[state.step].timeTemp.find(
+          option => option.doneness === doneness
+        );
+        let time = convertMS(selection.time).display;
+        return { ...state, doneness, time };
+      } else {
+        let { time, temp } = createRange(
+          state.currentRecipe.steps[state.step].timeTemp
+        );
+        return { ...state, doneness: "", time, temp };
+      }
     }
 
     default:
@@ -50,7 +58,7 @@ const recipes = (state = initialState, action) => {
   }
 };
 
-const calcRange = arrOfTimetemps => {
+const createRange = arrOfTimetemps => {
   let { time, temp } = arrOfTimetemps.reduce(
     (acc, val) => {
       let { time, temp } = val;
@@ -84,9 +92,9 @@ function convertMS(milliseconds) {
 
   const makeDisplay = num => {
     return num > 0
-      ? !num.toString().length < 2
-        ? num.toString()
-        : "0" + num.toString()
+      ? num.toString().length < 2
+        ? "0" + num.toString()
+        : num.toString()
       : "00";
   };
 
